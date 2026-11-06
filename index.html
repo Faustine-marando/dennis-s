@@ -1,37 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"><!--tells the browser how to interpret characters-->
-    <meta name="viewport"content="width=device-width, initial-scale=1.0">
-    <!--tells the browser to fit the content according to the decvices width
-    and use an initial scale of 1-->
-
-</head>
-<nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">contact</a>
-
-    <a href="semanticwebsite.html">SemanticWebsite</a>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic document</title>
     <link rel="stylesheet" href="index.css">
-</nav>
+</head>
 <body>
-    <h1>Welcome to My Web development Project</h1>
+    <!----NAVBAR content goes here-->
+ <nav>
+    <a href="#intro">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">contact</a>
+
+</nav>
+<!----Main content starts here---->
+
+<main>
+
+<section class="intro" id="intro">
+
+<div class="profileinfo">
+     <h1>Welcome to My Web development Project</h1>
+     
+
+    <div class="profileInfo-details">
+        <div class="profile_image">
+            <img src="assets\wallhaven-0pl6rp_1920x1080 (2).png" alt="profile image">
+        </div>
+<div class="details">
     <p>Student Name:Dennis Mutua</p>
     <p>Registration Number: COM/0012/25</p>
     <p>Project Idea: House Hunting System</p>
-
-    <h2>Features of the house hunting system</h2>
+        </div>
+    
+    </div>
    
-    <ul>
-        <li>Google maps</li>
-        <li>Accomodation categories</li>
-        <li>Filter search</li>
-        <li>Listings and price tags</li>
-        <li>Messaging</li>
-    </ul>
-     <p>More features are yet to come</p>
-    <audio controls src="BONGE_LA_SURPRISE_By_Wapendwa_Muziki___Official_Music_Visualizer__(256k).mp3"
-    type="audio/mp3">Your browser cannot support this audio</audio>
+    
+</div>
+    <h2 style="font-size: 2rem;">Features</h2>
+    
+        <div class="image-container">
+             <div class="imagecard">
+            <h2><span>01</span> Google maps</h2>
+            <div class="img">
+                <img src="assets\mika-baumeister-nDciGidCdQo-unsplash.jpg" height="300px">
+            </div>
+        </div>
+        <div class="imagecard">
+            <h2><span>02</span> Accomodation categories</h2>
+             <div class="img">
+                <img src="assets\zac-gudakov-wwqZ8CM21gg-unsplash.jpg">
+            </div>
+        </div>
+        <div class="imagecard">
+            <h2><span>03</span> Filter search</h2>
+             <div class="img">
+                  <img src="assets\markus-winkler-afW1hht0NSs-unsplash.jpg">
+            </div>
+        </div>
+        <div class="imagecard">
+            <h2><span>04</span> Listings and price tags</h2>
+             <div class="img">
+                  <img src="assets\artful-homes-ufT0GythnvE-unsplash.jpg">
+            </div>
+        </div>
+        <div class="imagecard">
+            <h2><span>05</span> Messaging</h2>
+             <div class="img">
+                  <img src="assets\samuel-angor-qbwGUYHiYnI-unsplash.jpg">
+            </div>
+        </div>
+        </div>
+       
+</section>
+
+
+    
+<!-------About section starts here------------->
+<section class="about" id="about">
+        <div class="about-content">
+            <h1>About House Hunting System</h1>
+            <div class="card-container">
+                <div class="card">
+                <h2>Mission</h2>
+                <p>The mission is to come up with a system that helps the 
+                 users to locate nearby vacant houses thus saving them time, money and the
+                    energy they would have spent looking for homes.
+                    </p>
+            </div>
+             
+                <div class="card">
+                    <h2>Vision</h2>
+                            <p>Create <strong>solutions</strong> that solves more users' <em>problems</em>
+                                in the <mark>future</mark>
+                                </p>
+                </div>
+            </div>
+            
+                        
+         </div>
+
+<div class="howToUse">
+       <h2>How to use ?</h2>
+       <div class="circles-container">
+        <div class="use-circle">
+        <h3>Step 1</h3>
+        <p>Open the app</p>
+       </div>
+       <div class="use-circle">
+        <h3>Step 2</h3>
+        <p>Login in or Sign in if you already have an accountcd </p>
+       </div>
+       </div>
+       
+</div>
+
+<div class="TechnicalTerms">
+    <h2>Technical terms related to this project</h2>
+        <ul>
+            <li>
+                <dt>HTML</dt>
+                 <dd>Hyper Text Markup Language that structures web pages</dd>
+                     </li>
+                        <li>
+                            <dt>CSS</dt>
+                                <dd>Cascading Style Sheets that style the html structure</dd>
+                                     </li>
+                                         <li>
+                                             <dt>React</dt>
+            <dd>A javascript framework that houses both structure and functionality at the same time</dd>
+                     </li>
+                        <li>
+                            <dt>DataBase</dt>
+                                <dd>Technology that helps you to store data that is structured or unstructured.
+                                     </dd>
+                                        </li>
+                                             <li>
+                                         <dt>Git and Github</dt>
+                                        <dd>These are platforms that help in collaboration and tracking files</dd>
+                                     </li>
+                                  </ul>
+                                         <h2>Folder structure</h2>
+                                            <ul>
+                                                <li>
+                                                     <h3>Frontend</h3>
+                                                         <ul>
+                                                            <li>HTML</li>
+                                                                <li>CSS</li>
+                                                                    <li>React</li>
+                                                                        </ul>
+                                                                                </li>
+                                                                             <li>
+                                                                 <h3>Backend</h3>
+                                                            <ul>
+                                                          <li>Python</li>
+                                                        <li>Django</li>
+                                                     <li>FastAPI</li>
+                                                     </ul>
+                                                    </li>
+                                            <li>
+                                        <h3>DataBase</h3>
+                                    <ul>
+                                    <li>PostgreSQL</li>
+                                    </ul>
+                                    </li>
+                
+           
+            
+        </ul>
+</div>
+</section>
+<section class="contact" id="contact">
+    <h2>Contacts</h2>
+    <h1>External link: <a href="https:///www.kibabii.ac.ke">Visit Kibu website</a></h1>
+    <h1>Email :<a href="mailto: admissions@kibu.ac.ke"rel="noopener noreferrer" target="_blank">reach us on : kibu@gmail.com</a></h1>
+    <h1>Phone: 0112507193</h1>
+</section>
+</main>
+<footer>
+    <p>&copy; Dennis Mutua. All rights reserved</p>
+    <p>Developed by Dennis</p>
+</footer>
 </body>
 </html>
