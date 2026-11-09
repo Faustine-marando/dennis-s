@@ -2,15 +2,17 @@
     scroll-behavior: smooth;
     margin:0;
     padding:0;
+    
 }
 :root{
     --background-color:rgba(49, 49, 49, 0.612);
-    --second-background:rgb(24,24,24);
+    --second-background:(white);
     
 }
 
 
 .imagecard{
+    color:black;
     position:relative;
     width:15em;
     overflow:hidden;
@@ -18,14 +20,16 @@
     flex-direction:column;
     gap:2em;
     height:400px;
-    width:350px;
+    width:400px;
     border:2px solid rgba(220, 212, 212, 0.684);
    
 }
 .image-container{
     gap:10px;
-    flex-wrap:wrap;
-    display:flex;
+    padding:20px;
+   display:grid;
+   grid-template-columns:repeat(3, minmax(400px, 40px));
+    background:white;
 }
 .imagecard img{
     width:100%;
@@ -40,22 +44,21 @@
 span{
     opacity:0.7;
 }
-section{
-    width:100%;
-    padding:5em 15%;
+.images{
     display:flex;
     flex-direction:column;
-    gap:5em;
+    justify-content:center;
+    align-items:center;
 }
 main{
-    padding:10em 15%;
-    color:white;
+     width:100%;
+     box-sizing:border-box;
+    color:black;
     font-family:Arial, Helvetica, sans-serif;
     display:flex;
     flex-direction: column;
     gap:4em;
-    align-items: center;
-    justify-content: center;
+    
     min-height:100vh;
     background-color: var(--second-background);
 
@@ -63,7 +66,9 @@ main{
 .profileinfo{
     display:flex;
    flex-direction:column;
-
+   background:white;
+   color:black;
+    padding-bottom:5rem;
 }
 .profileinfo h1{
     font-size:3rem;
@@ -74,43 +79,62 @@ main{
     font-size:1.1em;
 }
 .profile_image img{
-
+    border-radius:10px;
     width: 300px;
     height:200px;
 }
-.profile_image{
-    border-right: 1px solid white;
-}
+
 .profileInfo-details{
     margin-top:10rem;
-    border:1px solid white;
     display:flex;
-    gap:30px;
     align-items:center;
+    gap:50px;
+    justify-content:space-evenly;
 }
+
 .card{
     border:1px solid black;
+    color:black;
     width:400px;
     padding:20px;
-    background:black;
+    background:white;
     border:none;
+    border-radius:10px;
+    transition:0.3s ease-in-out;
+}
+.card:hover{
+    transform:translateY(-5px);
 }
 .card-container{
     display:flex;
     gap:20px;
     justify-content: center;
 }
+.intro{
+    margin-top:10rem;
+    margin-left:20px;
+    display:flex;
+    flex-direction:column;
+}
+.intro h1{
+    text-align:center;
+}
 .use-circle{
-    border:1px solid black;
-    width:300px;
-    height: 300px;
-    border-radius:100%;
+    border:1px solid white;
+    width:250px;
+    height:250px;
+    background:white;
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items:center;
     gap:20px;
     padding:20px;
+    border-radius:10px;
+    transition:0.3s ease-in-out;
+}
+.use-circle:hover{
+      transform:translateY(-5px);
 }
 nav{
     font-family:Arial, Helvetica, sans-serif;
@@ -121,7 +145,7 @@ nav{
     width:100%;
     left:0;
     padding:2em;
-    background-color:var(--background-color);
+    background-color:white;
     display:flex;
     gap:2em;
     align-items: center;
@@ -129,17 +153,32 @@ nav{
 }
 nav a{
       opacity: 0.7;
+      font-weight:bold;
 }
 nav a{
-    color:white;
+    color:black;
 
     text-decoration:none;
 }
+.details{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    margin-left:100px;
+}
 .about{
     margin-top:10rem;
-    background:grey;
+    background:whitesmoke;
+    padding:4rem 0;
+    color:black;
     width:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+   align-items:center;
+   
 }
+
 .about h1{
     text-align:center;
     font-size:3rem;
@@ -154,8 +193,129 @@ nav a{
 .contact h2{
     font-size:3rem;
 }
+.contact{
+    padding:5rem 10px;
+    color:black;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+.TechnicalTerms ul{
+    margin-bottom:10px;
+   
+}
+.TechnicalTerms{
+    margin-top:50px;
+     display:flex;
+    flex-direction:column;
+    width:100%;
+    
+}
+.terms{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+.folder-structure{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    margin-top:50px;
+    margin-bottom:50px;
+}
+.TechnicalTerms dt{
+    border:1px solid rgb(9, 170, 219);
+    background:rgba(18, 200, 224, 0.534);
+    padding:5px;
+    border-radius:10px;
+    width:fit-content;
+    margin-bottom:10px;
+    margin-top:10px;
+}
+.TechnicalTerms li{
+    list-style:none;
+}
+.howToUse{
+    margin-top:5rem;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    border-bottom:1px solid grey;
+    width:100%;
+    padding-bottom:50px;
+}
+.terms{
+        border-bottom:1px solid grey;
+    width:100%;
+    padding-bottom:50px;
+}
 footer{
     padding:50px;
     background:whitesmoke;
     font-family: Arial, Helvetica, sans-serif;
+}
+.circles-container{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+    
+}
+/* media queries*/
+@media(max-width:768px){
+    .intro{
+        display:flex;
+        flex-direction:column;
+
+    }
+    .profileinfo{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+
+    }
+    .details{
+        margin-left:0;
+        width:250px;
+    }
+    .profileInfo-details{
+    display:flex;
+    flex-direction:column;
+    margin-left:0;
+    justify-content:center;
+     align-items:center;
+    }
+    .imagecard{
+        width:300px;
+    }
+    .image-container{
+        display:flex;
+        flex-direction:column;
+    }
+    .card-container{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:Center;
+        
+    }
+    .circles-container{
+         display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:Center;
+    }
+    .TechnicalTerms{
+         display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:Center;
+        width:300px;
+    }
+    .card{
+        width:300px;
+    }
 }
